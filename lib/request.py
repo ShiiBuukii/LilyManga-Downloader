@@ -1,5 +1,5 @@
 from mechanize import Browser
-import requests,shutil,os,sys
+import requests,os,sys
 from clint.textui import progress
 
 class Request:
@@ -31,9 +31,7 @@ class Request:
         
 
         chunk_size = 1024
-        # with tqdm.wrapattr(req.raw,"read",total=total_size,desc="Downloading") as raw:
-        #     with open(self.downloaded_path + title + "/" + chapter + "/" + filename, "wb") as out_file:
-        #         shutil.copyfileobj(raw,out_file)
+      
 
 
         with open(self.downloaded_path + title + "/" + chapter + "/"  + filename, "wb") as out_file:
