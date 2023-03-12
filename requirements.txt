@@ -1,0 +1,4 @@
+python -m pip install requests
+python -m pip install mechanize
+python -m pip install BeautifulSoup4
+python -m pip install tqdm
