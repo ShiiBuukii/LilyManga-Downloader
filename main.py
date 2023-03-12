@@ -20,4 +20,7 @@ def main():
         request.download(url, title, chapter[-1], filename)
     
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except Exception as e:
+        print("Something went wrong : " + e)
