@@ -18,9 +18,18 @@ def main():
         filename = urls[-1]
 
         request.download(url, title, chapter[-1], filename)
+        
+def banner():
+    print("--- Lilymanga downloader ---")
+    print("--- Usage ---")
+    print("- Put url and wait while downloading saved to /downloaded/<manga title> -")
+    print("----------------------------")
+
+    
     
 if __name__ == '__main__':
     try:
+        banner()
         main()
     except Exception as e:
         print("Something went wrong : " + e)
