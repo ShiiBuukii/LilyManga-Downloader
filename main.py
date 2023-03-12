@@ -32,4 +32,4 @@ if __name__ == '__main__':
         banner()
         main()
     except Exception as e:
-        print("Something went wrong : " + e)
+        print("Something went wrong : " + str(e))
