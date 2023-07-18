@@ -1,3 +1,5 @@
+# This code doesn't work anymore :( 
+
 Lilymanga.com downloader with python script.
 
 
